@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
             try {
                 var obj = SmsManager.getDefault()
                 obj.sendTextMessage(phno.text.toString(), null, smstxt.text.toString(), null, null)
-                Toast.makeText(applicationContext, "SMS Sent!", Toast.LENGTH_LONG).show()
+                Toast.makeText(applicationContext, "SMS Sent", Toast.LENGTH_LONG).show()
             }
             catch(e: Exception){
                 Toast.makeText(applicationContext, "Error", Toast.LENGTH_LONG).show()
